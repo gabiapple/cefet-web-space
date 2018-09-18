@@ -11,7 +11,6 @@ for(let button of buttons){
         parent.classList.toggle('expandido');
         console.log(no.innerHTML);
         no.innerHTML = no.innerHTML == '+' ? '-' : '+';
-        console.log(no.innerHTML);
     });
     
 }
