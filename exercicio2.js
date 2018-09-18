@@ -11,9 +11,10 @@ const servidorDasImagens = 'https://fegemo.github.io/cefet-web/images/',
   ];
 
 const changeImage = function(factor){
-    cont = (cont == 0 && factor < 0) ? 4 : cont + factor;
+    let size = todasAsImagens.length;
+    cont = (cont == 0 && factor < 0) ? todasAsImagens.length - 1 : cont + factor;
     image = document.querySelector('#slide');
-    image.src = servidorDasImagens + todasAsImagens[cont % 5];
+    image.src = servidorDasImagens + todasAsImagens[cont % size];
 }
 
 let cont = 0;
